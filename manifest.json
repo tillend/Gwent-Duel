@@ -1,0 +1,27 @@
+{
+    "manifest_version": 1,
+    "name": "Gwent Duel",
+    "description": "simple duel calculation of gwent",
+    "version": "0.1.0",
+    "author": "Lin<weihaolin2008@qq.com>",
+    "offline_enabled": true,
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "options_page": "options.html",
+    "browser_action": {
+        "default_title": "Gwent Duel",
+        "default_icon": "icon/icon.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "icon/icon.png"
+    }
+}
