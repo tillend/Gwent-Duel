@@ -1,7 +1,7 @@
 {
     "manifest_version": 1,
-    "name": "Gwent Duel",
-    "description": "simple duel calculation of gwent",
+    "name": "Gwent Duel Mechanism",
+    "description": "simple calculation of duel mechanism in gwent",
     "version": "0.1.0",
     "author": "Lin<weihaolin2008@qq.com>",
     "offline_enabled": true,
@@ -12,12 +12,12 @@
     "background": {
         "persistent": false,
         "scripts": [
-            "background.js"
+            "js/background.js"
         ]
     },
     "options_page": "options.html",
     "browser_action": {
-        "default_title": "Gwent Duel",
+        "default_title": "Gwent Duel Mechanism",
         "default_icon": "icon/icon.png",
         "default_popup": "popup.html"
     },
