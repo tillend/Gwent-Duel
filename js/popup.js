@@ -17,25 +17,7 @@ chrome.tabs.query({
         //inside.style.display = 'none';
         window.location.href = "input.html";
     }
-    
-    //显示计算结果
-    function showResult(){
-        img.classList.add('hide');
-        txt.style.display = 'block';
 
-        txt.value = txt.value.trim();
-        txt.select();
-    }
-    
-    //计算收益
-    function calc() {
-
-    }
-    
-    //显示背景图
-    function showBackground() {
-        inside.style.display = 'block';
-    }
 	
 });
 

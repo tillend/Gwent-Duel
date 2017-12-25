@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+.inputTable{
+	table-layout:fixed;
+	width: 200px;
+}
+
+
+.inputTable tr td{
+	width: 50px;
+}
+
+.inputTable tr td input{
+	width: 50px;
+}

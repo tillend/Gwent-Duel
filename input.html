@@ -4,11 +4,20 @@
 <meta charset="UTF-8">
 <title>input page</title>
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/input.css"/>
+<script src="js/calc.js"></script>
 </head>
 <body>
 
 <div id="bg">
-input
+<form>
+	<table class="inputTable">
+		<tr><td>战力</td><td>护甲</td></tr>
+		<tr><td><input id="powerA" type="text"/></td><td><input id="shellA" type="text" value="0"/></td></tr>
+		<tr><td><input id="powerB" type="text"/></td><td><input id="shellB" type="text" value="0"/></td></tr>
+		<tr><td rowspan="2"><input id="submit" type="button" value="确定"/></td></tr>
+	</table>
+</form>
 </div>
 
 </body>
