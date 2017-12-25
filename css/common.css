@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+}
+
+#bg {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	padding: 5px;
+	box-sizing: border-box;
+}
