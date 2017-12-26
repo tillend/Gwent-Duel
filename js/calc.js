@@ -4,7 +4,7 @@ window.onload = function() {
 };
 
 function calc() {
-    var result;
+    var result = 0;
 
     var powerA = document.getElementById("powerA").value;
     var shellA = document.getElementById("shellA").value;
@@ -12,14 +12,14 @@ function calc() {
     var shellB = document.getElementById("shellB").value;
 
     if (!judgeParam(powerA, shellA, powerB, shellB)) {
-        //alert("参数错误");
+        alert("参数错误");
         //window.location.href = "input.html";
     }
 
     if (powerA < powerB) {
-        result = calcDetail(powerA, shellA, powerB, shellB);
+        result = calcDetail(parseInt(powerA), parseInt(shellA), parseInt(powerB), parseInt(shellB));
     } else {
-        result = calcDetail(powerB, shellB, powerA, shellA);
+        result = calcDetail(parseInt(powerB), parseInt(shellB), parseInt(powerA), parseInt(shellA));
     }
 
     alert(result);
@@ -29,14 +29,23 @@ function calc() {
 //入参判断
 function judgeParam(a, b, c, d) {
     return notNull(a) && notNull(b) && notNull(c) && notNull(d) && 
-    	(typeof a == "number") && (typeof b == "number") && 
-    	(typeof c == "number") && (typeof d == "number") && 
+    	checkNumber(a) && checkNumber(b) && checkNumber(c) && checkNumber(d) && 
     	(a > 0) && (b >= 0) && (c > 0) && (d >= 0);
 }
 
 function notNull(input) {
     return input != null;
 }
+
+//验证字符串是否是数字
+function checkNumber(chr) {
+  var reg = /^[0-9]+.?[0-9]*$/;
+  if (reg.test(chr)) {
+    return true;
+  }
+  return false;
+}
+
 
 function calcDetail(powerA, shellA, powerB, shellB) {
     var damage; //能造成的伤害
