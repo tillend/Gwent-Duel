@@ -2,7 +2,8 @@
 
 chrome.runtime.onInstalled.addListener(function (details) {
     if (details.reason == 'install' || details.reason == 'update') {
-        var url = 'chrome-extension://' + chrome.runtime.id + '/readme.html';
+//        var url = 'chrome-extension://' + chrome.runtime.id + '/readme.html';
+    	var url = "http://www.iyingdi.cn/web/article/gwent?seed=14";
 
         chrome.tabs.create({
             url   : url,
